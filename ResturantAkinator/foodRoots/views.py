@@ -10,7 +10,7 @@ questions = ["What is your cultural background?",
             ]
 
 class AnswerForm(forms.Form):
-    answer = forms.CharField(label="New Answer")
+    answer = forms.CharField(label="", widget=forms.TextInput(attrs={'id': 'answer_field'}))
 
 def index(request):
     return render(request, "foodRoots/index.html")

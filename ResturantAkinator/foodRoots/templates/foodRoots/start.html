@@ -19,14 +19,14 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h2>{{ current_question_num }}. {{ current_question }}</h2>
-        <form action="{% url 'foodRoots:start' %}" method="post">
+        <h2 id="question">{{ current_question_num }}. {{ current_question }}</h2>
+        <form action="{% url 'foodRoots:start' %}" method="post" autocomplete="off">
             {% csrf_token %}
             {{ form }}
-            <input type="submit">
+            <input type="submit" class="btn btn-primary" value="Submit">
         </form>
         <form action="{% url 'foodRoots:reset' %}">
-            <input type="submit" type="button" class="btn btn-primary" value="Reset">
+            <input type="submit" class="btn btn-primary" value="Reset">
         </form>
     </body>
 </html>
