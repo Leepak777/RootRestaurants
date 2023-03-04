@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+#title {
+    margin-top: 20px;
+}
+
+#get-started {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
