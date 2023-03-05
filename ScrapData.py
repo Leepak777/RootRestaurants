@@ -49,3 +49,4 @@ x['restaurants'] = a
 
 with open('final_result.json', 'w+', encoding='utf-8') as out: # writing the final file
     json.dump(x, out, indent=4, ensure_ascii=False)
+
