@@ -1,5 +1,18 @@
 body {
     text-align: center;
+    background-image: linear-gradient(rgba(128,128,128,0.5), rgba(128,128,128,0.5)), url('/static/foodRoots/resturant.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-family: "Trirong", serif;
+    color: whitesmoke;
+}
+
+.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 #title {

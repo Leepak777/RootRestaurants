@@ -9,34 +9,50 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Culture Food Roots</title>
+        <title>Resturants</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'foodRoots/index-styles.css' %}">
+        <link rel="stylesheet" href="{% static 'foodRoots/resturants.css' %}">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     </head>
+    <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1 id="title">Discover the Food Roots of Your Culture!</h1>
-        <form action="{% url 'foodRoots:start' %}">
-            <input type="submit" id="get-started" type="button" class="btn btn-secondary" class="text-dark" value="Get Started">
+        <div id="main-content">
+            <ul>
+                {% for row in resturants %}
+                    {% for element in row %}
+                    <h2>{{ element }}</h2>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+        <form action="{% url 'foodRoots:index' %}">
+            <input type="submit" class="btn btn-secondary" class="text-dark" value="Home">
         </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <script src="" async defer></script>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
     </body>
 </html>
